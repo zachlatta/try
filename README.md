@@ -24,6 +24,16 @@ If you're like me, you've spent a bunch of time customizing your development env
 
 Try opts for using temp directories over Docker so you have access to all of your tooling without having to re-install anything.
 
+## How do you capitalize this thing?
+
+Try should be capitalized at the beginning of sentences, but lowercased everywhere else.
+
+Examples:
+
+> Why doesn't try support Docker?
+
+> Try doesn't support Docker because of the reason explained above.
+
 ## License
 
 Try is licensed under the MIT license. See [`LICENSE`](LICENSE) for the full text.
