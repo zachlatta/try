@@ -8,6 +8,10 @@ Usage:
     
 Try will clone the repo, set up the environment, install dependencies, and then drop you into a shell where you can play around. Once you're done, exit the shell and everything will be deleted.
 
+Installation:
+
+    $ go get github.com/zachlatta/try/cmd/try
+
 Examples:
 
     $ try https://github.com/ggbrw/boolr
@@ -19,10 +23,6 @@ Currently supported environments:
 - Node / JavaScript
 
 If you'd like to add support for another environment, create a new strategy in [`runner/strategy/`](runner/strategy/). See [`runner/strategy/node.go`](runner/strategy/node.go) for an example.
-
-Installation:
-
-    $ go get github.com/zachlatta/try/cmd/try
 
 ## Why doesn't try use Docker?
 
