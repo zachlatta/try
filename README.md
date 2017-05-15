@@ -15,9 +15,7 @@ Try will clone the repo, set up the environment, install dependencies, and then 
 Examples:
 
     $ try https://github.com/ggbrw/boolr
-
     $ try https://github.com/shivammathur/IPpy
-    
     $ try https://github.com/maxhallinan/my-clippings-to-json
     
 ## Why doesn't try use Docker?
