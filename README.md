@@ -2,10 +2,6 @@
 
 Try is a command-line utility that makes it easy to test-drive other people's projects without side effects.
 
-Installation:
-
-    $ go get github.com/zachlatta/try/cmd/try
-
 Usage:
 
     $ try [repo]
@@ -23,6 +19,10 @@ Currently supported environments:
 - Node / JavaScript
 
 If you'd like to add support for another environment, create a new strategy in [`runner/strategy/`](runner/strategy/). See [`runner/strategy/node.go`](runner/strategy/node.go) for an example.
+
+Installation:
+
+    $ go get github.com/zachlatta/try/cmd/try
 
 ## Why doesn't try use Docker?
 
