@@ -35,8 +35,12 @@ func RecursiveList(dir string) (files []string, err error) {
 }
 
 func ConstructEnv(env map[string]string, insertCurrentEnv bool) (newEnv []string) {
-	if env == nil {
-		env = make(map[string]string)
+	mutEnv := make(map[string]string)
+
+	if env != nil {
+		for key, val := range env {
+			mutEnv[key] = val
+		}
 	}
 
 	if insertCurrentEnv {
@@ -46,8 +50,8 @@ func ConstructEnv(env map[string]string, insertCurrentEnv bool) (newEnv []string
 			name := split[0]
 			val := split[1]
 
-			if _, exists := env[name]; !exists {
-				env[name] = val
+			if _, exists := mutEnv[name]; !exists {
+				mutEnv[name] = val
 			}
 		}
 	}
