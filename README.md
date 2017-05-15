@@ -34,6 +34,10 @@ Examples:
 
 > Try doesn't support Docker because of the reason explained above.
 
+## Feature Wishlist
+
+Run `git ls-files | xargs grep "TODO"` to get an up-to-date feature wishlist for try.
+
 ## License
 
 Try is licensed under the MIT license. See [`LICENSE`](LICENSE) for the full text.
