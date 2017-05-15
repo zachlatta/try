@@ -81,6 +81,8 @@ func (g *Go) Setup() (map[string]string, error) {
 		return nil, err
 	}
 
+	// TODO: Install dependencies here
+
 	return g.env, nil
 }
 
