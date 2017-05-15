@@ -18,6 +18,12 @@ Examples:
     $ try https://github.com/shivammathur/IPpy
     $ try https://github.com/maxhallinan/my-clippings-to-json
     
+Currently supported environments:
+
+- Node / JavaScript
+
+If you'd like to add support for another environment, create a new strategy in [`runner/strategy/`](runner/strategy/). See [`runner/strategy/node.go`](runner/strategy/node.go) for an example.
+
 ## Why doesn't try use Docker?
 
 If you're like me, you've spent a bunch of time customizing your development environment and you want access to your custom dotfiles, non-traditional shell, and your editor when playing around with new repositories.
