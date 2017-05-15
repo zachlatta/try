@@ -60,7 +60,6 @@ func (n Node) Setup() (map[string]string, error) {
 	}
 
 	for _, packageJsonDir := range packageJsonDirs {
-		fmt.Println(packageJsonDir)
 		_, err := util.Run(packageJsonDir, n.env, "npm", "install")
 		if err != nil {
 			return nil, err
